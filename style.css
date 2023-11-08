@@ -2,7 +2,13 @@
 
 /* variables de couleur */
 :root {
-    --color-principale: #fff;
+    --color-principale600: #ff0000;
+    --color-principale500: #ff2323;
+    --color-principale700: #d70000;
+
+    --color-white: #ffffff;
+    --color-grey: #dcdcdc;
+    --color-black: #292929;
 }
 
 /* proprietes universelles */
@@ -11,15 +17,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins";
-    scroll-behavior: smooth;
 }
 
 img, a {
     -webkit-user-drag: none;
 }
 
-/* proprietes de la page */
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
