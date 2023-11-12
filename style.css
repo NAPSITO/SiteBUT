@@ -27,6 +27,21 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding-top: 22vh;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 /* header */
@@ -151,9 +166,10 @@ footer {
     justify-content: space-evenly;
     align-items: start;
     padding-block: 15px;
+    margin-top: 35px;
     background: var(--color-white);
     border-top: 2px solid var(--color-grey);
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     color: var(--color-black);
@@ -165,6 +181,10 @@ footer .plan_site, footer .entreprise {
     align-items: start;
     justify-content: center;
     flex-direction: column;
+}
+
+footer .plan_site {
+    margin-bottom: 30px;
 }
 
 footer .plan_site li, footer .entreprise li {
@@ -238,4 +258,64 @@ footer .cnil_link a:hover {
 
 footer .cnil_link {
     align-self: flex-end;
+}
+
+.body_content {
+    padding-inline: 30px;
+}
+
+/* page accueil */
+.body_content .row_accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body_content hr {
+    width: 100%;
+    margin-block: 30px;
+    height: 2px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--color-black);
+    opacity: .35;
+}
+
+.body_content .row_accueil .column {
+    justify-content: space-between;
+}
+
+.body_content .row_accueil h1 {
+    font-size: 1.35em;
+    margin-bottom: 10px;
+}
+
+.body_content .row_accueil .row {
+    justify-content: space-between;
+}
+
+.body_content .row_accueil img {
+    width: 10vw;
+    margin-right: 30px;
+}
+
+.row_accueil .column {
+    align-items: start;
+}
+
+.but_history .column .source {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.but_history .column .source a {
+    margin-left: 5px;
+}
+
+.iut_info a img {
+    transition: transform .1s ease-in-out;
+}
+
+.iut_info a:hover img {
+    transform: scale(1.1);
 }
