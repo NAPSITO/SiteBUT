@@ -297,7 +297,7 @@ footer .cnil_link {
 }
 
 .body_content .row_accueil img {
-    width: 10vw;
+    width: 11vw;
     margin-right: 30px;
 }
 
@@ -328,7 +328,17 @@ footer .cnil_link {
 }
 
 .row_accueil.iut_info ul {
-    margin-left: 20px;
     margin-block: 10px;
+    margin-left: 15px;
+}
+
+.row_accueil.iut_info ul li {
+    margin-left: 20px;
     line-height: 1.6;
+}
+
+.row_accueil.iut_info ul li.title_list {
+    line-height: 2;
+    list-style: none;
+    margin-left: 0;
 }
