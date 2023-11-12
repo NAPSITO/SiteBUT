@@ -268,7 +268,8 @@ footer .cnil_link {
 .body_content .row_accueil {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
+    width: 100%;
 }
 
 .body_content hr {
@@ -283,11 +284,12 @@ footer .cnil_link {
 
 .body_content .row_accueil .column {
     justify-content: space-between;
+    align-items: start;
 }
 
 .body_content .row_accueil h1 {
     font-size: 1.35em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .body_content .row_accueil .row {
@@ -299,17 +301,22 @@ footer .cnil_link {
     margin-right: 30px;
 }
 
-.row_accueil .column {
-    align-items: start;
+.body_content .row_accueil .column p {
+    font-size: 1.05em;
+    line-height: 1.55;
 }
-
-.but_history .column .source {
+.row_accueil .column .source {
     margin-top: 8px;
     font-style: italic;
+    font-size: .95em;
 }
 
-.but_history .column .source a {
+.row_accueil .source a {
     margin-left: 5px;
+}
+
+.row_accueil .source a:hover, .iut_info ul a:hover {
+    color: var(--color-principale500);
 }
 
 .iut_info a img {
@@ -318,4 +325,10 @@ footer .cnil_link {
 
 .iut_info a:hover img {
     transform: scale(1.1);
+}
+
+.row_accueil.iut_info ul {
+    margin-left: 20px;
+    margin-block: 10px;
+    line-height: 1.6;
 }
