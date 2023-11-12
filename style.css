@@ -54,6 +54,11 @@ header .header_top {
     width: 100%;
 }
 
+.header_top .left {
+    flex: 1;
+    display: inline-flex;
+}
+
 header .header_top img {
     height: 12vh;
 }
@@ -81,7 +86,6 @@ header .header_top img {
     position: relative;
     bottom: 0;
     left: 6px;
-    font-size: 22px;
 }
 
 .nav_links li a {
@@ -89,6 +93,7 @@ header .header_top img {
     font-size: 21px;
     text-decoration: none;
     color: var(--color-black);
+    font-size: 16px;
 }
 
 .nav_links li.hover:after {
@@ -117,9 +122,9 @@ header .header_top img {
 .sous-menu {
     display: none;
     position: absolute;
-    bottom: -120px;
+    bottom: -103px;
     background-color: var(--color-white);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-grey);
     z-index: 1;
 }
 
@@ -137,4 +142,92 @@ header .header_top img {
     margin-block: 50px;
     transition: background-color 0.3s;
     white-space: nowrap;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-block: 15px;
+    background: var(--color-white);
+    border-top: 2px solid var(--color-grey);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: var(--color-black);
+    z-index: 9999;
+}
+
+footer .plan_site, footer .entreprise {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .plan_site li, footer .entreprise li {
+    margin: 12px 0;
+}
+
+footer .plan_site ul li.first {
+    margin-top: 0;
+}
+
+footer .plan_site ul li ul li {
+    margin-left: 20px;
+}
+
+footer .plan_site ul li p {
+    margin-left: 6px;
+}
+
+footer .entreprise li {
+    margin-left: 20px;
+}
+
+.plan_site li a, .entreprise li {
+    font-weight: 500;
+    font-size: 21px;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.plan_site li a {
+    position: relative;
+    cursor: pointer;
+    padding: 0 5px;
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+
+.plan_site li a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-principale700);
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s;
+    border-radius: 50px;
+}
+
+.plan_site a:hover:after {
+    transform: scaleX(100%);
+}
+
+.plan_site a:hover {
+    color: var(--color-principale600);
+    transition: color .15s ease-in;
+}
+
+footer .cnil_link a, footer .entreprise h3, footer .entreprise li {
+    font-size: 16px;
+}
+
+footer .cnil_link {
+    align-self: flex-end;
 }
