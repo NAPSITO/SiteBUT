@@ -8,6 +8,7 @@
 
     --color-white: #ffffff;
     --color-grey: #dcdcdc;
+    --color-grey2: #efefed;
     --color-black: #292929;
 }
 
@@ -27,7 +28,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding-top: 22vh;
+    padding-top: 18vh;
 }
 
 .column {
@@ -75,7 +76,7 @@ header .header_top {
 }
 
 header .header_top img {
-    height: 12vh;
+    height: 9vh;
 }
 
 .nav_links {
@@ -137,7 +138,7 @@ header .header_top img {
 .sous-menu {
     display: none;
     position: absolute;
-    bottom: -103px;
+    bottom: -143px;
     background-color: var(--color-white);
     border: 2px solid var(--color-grey);
     z-index: 1;
@@ -145,7 +146,9 @@ header .header_top img {
 
 .sous-menu li {
     display: block;
-    text-align: left;
+    text-align: center;
+    margin-block: 10px;
+    cursor: default;
 }
 
 .nav_links li:hover .sous-menu {
@@ -154,7 +157,6 @@ header .header_top img {
 
 .sous-menu li a {
     color: var(--color-black);
-    margin-block: 50px;
     transition: background-color 0.3s;
     white-space: nowrap;
 }
@@ -272,6 +274,19 @@ footer .cnil_link {
     width: 100%;
 }
 
+.body_content .animate, .body_content .animate_reverse {
+    transition: all .2s ease-in-out;
+    opacity: 0;
+}
+
+.body_content .animate {
+    animation: fadeInRow .45s .25s forwards;
+}
+
+.body_content .animate_reverse {
+    animation: fadeInRowReverse .45s .6s forwards;
+}
+
 .body_content hr {
     width: 100%;
     margin-block: 30px;
@@ -319,12 +334,16 @@ footer .cnil_link {
     color: var(--color-principale500);
 }
 
-.iut_info a img {
+.iut_info a img, .vie_etudiante a img {
     transition: transform .1s ease-in-out;
 }
 
 .iut_info a:hover img {
     transform: scale(1.1);
+}
+
+.vie_etudiante a:hover img {
+    transform: scale(1.2);
 }
 
 .row_accueil.iut_info ul {
@@ -341,4 +360,110 @@ footer .cnil_link {
     line-height: 2;
     list-style: none;
     margin-left: 0;
+}
+
+.row_accueil.liste_competences .column {
+    width: 100%;
+}
+
+.row_accueil.liste_competences .column a.content_liste_competences {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-grey2);
+    box-shadow: 0 0 5px var(--color-black);
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: all .2s ease-in-out;
+    animation: fadeInCard .45s .2s forwards;
+    opacity: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.row_accueil.liste_competences .column a.content_liste_competences:hover {
+    background-color: var(--color-grey);
+    box-shadow: 0 0 10px var(--color-black);
+    border-radius: 20px;
+}
+
+.row_accueil.liste_competences .column a.content_liste_competences:not(:nth-child(1)) {
+    margin-top: 30px;
+}
+
+.row.content_liste_competences img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.content_liste_competences li {
+    margin-left: 30px;
+}
+
+.content_liste_competences li.title_list {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.content_liste_competences li.title_list span {
+    color: var(--color-principale700);
+}
+
+.content_liste_competences li.descripiton {
+    list-style: none;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.row_accueil.liste_competences .source {
+    margin-top: 30px;
+}
+
+.row_accueil.vie_etudiante h1 {
+    margin-bottom: 0;
+}
+
+.row_accueil.vie_etudiante .row.reverse {
+    margin-top: 0;
+    flex-direction: row-reverse;
+}
+
+.row.reverse img {
+    margin-inline: 30px;
+    width: 14vw;
+    transform: scale(1.1);
+}
+
+/* animations */
+@keyframes fadeInRow {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRowReverse {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInCard {
+    from {
+        transform: scale(.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
