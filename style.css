@@ -470,7 +470,10 @@ footer .cnil_link {
 .formulaire1 {
     width : 100%;
 }
-
+.formulaire2 {
+    width : 100%;
+    margin-left : 200px;
+}
 .formulaire1 input {
     width: 30vw;
 }
