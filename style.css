@@ -467,6 +467,10 @@ footer .cnil_link {
     transform: scale(1.1);
 }
 
+.formulaire1 {
+    width : 400px;
+    height : 50px;
+}
 /* animations */
 @keyframes fadeInRow {
     from {
