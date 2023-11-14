@@ -10,6 +10,30 @@
     --color-grey: #dcdcdc;
     --color-grey2: #efefed;
     --color-black: #292929;
+
+    --color-comp1-1: #d08a77;
+    --color-comp1-2: #e8c5bb;
+    --color-comp1-3: #f3e2dd;
+
+    --color-comp2-1: #ff6f4c;
+    --color-comp2-2: #ffb7a6;
+    --color-comp2-3: #ffdbd2;
+
+    --color-comp3-1: #fdcf41;
+    --color-comp3-2: #fee7a0;
+    --color-comp3-3: #fff3cf;
+
+    --color-comp4-1: #91ae4f;
+    --color-comp4-2: #c8d6a7;
+    --color-comp4-3: #e4ebd3;
+
+    --color-comp5-1: #5770be;
+    --color-comp5-2: #abb7df;
+    --color-comp5-3: #d5dbef;
+
+    --color-comp6-1: #a26859;
+    --color-comp6-2: #d0b3ac;
+    --color-comp6-3: #e8d9d5;
 }
 
 /* proprietes universelles */
