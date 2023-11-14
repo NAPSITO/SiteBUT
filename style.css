@@ -467,15 +467,21 @@ footer .cnil_link {
     transform: scale(1.1);
 }
 
-.formulaire1 {
-    width : 100%;
-}
 .formulaire2 {
-    width : 100%;
     margin-left : 200px;
 }
 .formulaire1 input {
     width: 30vw;
+    height: 40px;
+    margin-inline:10px;
+}
+
+.row_accueil .img img.image_contact {
+    width: 700px;
+}
+
+textarea {
+    width : 700px
 }
 /* animations */
 @keyframes fadeInRow {
