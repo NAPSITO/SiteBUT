@@ -668,6 +668,10 @@ footer li.active a {
     border-collapse: collapse;
 }
 
+.row_accueil.presentation_comp .row.competences table.first {
+    margin-right: 40px;
+}
+
 .row_accueil.presentation_comp .row.competences td {
     border: 1px solid var(--color-black);
     width: auto;
