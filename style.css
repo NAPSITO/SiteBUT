@@ -690,14 +690,18 @@ footer li.active a {
 
 .contact .column.contact_content form.formulaire {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 .column.contact_content form.formulaire .column {
-    width: 30%;
+    width: 18vw;
+}
+
+.contact_content form.formulaire .column label:nth-child(1) {
+    margin-top: 0;
 }
 
 .contact_content form.formulaire .column label {
@@ -765,12 +769,12 @@ footer li.active a {
 }
 
 .contact_content form.formulaire .message_input_box.column {
-    width: 100%;
-    margin-left: 35px;
+    width: auto;
+    margin-left: 3%;
 }
 
 .contact_content form.formulaire .message_input_box textarea {
-    width: 40%;
+    width: 45%;
     padding: 10px;
     margin-top: 5px;
     outline: none;
@@ -780,16 +784,40 @@ footer li.active a {
     height: 360px;
     max-height: 360px;
     min-height: 54px;
-    max-width: 72vw;
+    max-width: 80vw;
     min-width: 400px;
 }
 
-.row_accueil .img img.image_contact {
-    width: 600px;
+.row_accueil.contact.bottom .row {
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.05em;
+    height: 55vh;
+    width: 100%;
 }
 
-.row_accueil .img img.image_localisation {
-    width: 300px;
+.row_accueil.contact.bottom .row img {
+    border-radius: 15px;
+}
+
+.row_accueil.contact.bottom .row .column {
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.row_accueil.contact.bottom img.image_contact {
+    width: 35%;
+    height: 98%;
+    object-fit: cover;
+}
+
+.row_accueil.contact.bottom img.image_localisation {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: 10px;
 }
 
 /* animations */
