@@ -563,9 +563,11 @@ footer .cnil_link {
 }
 
 .row_accueil .img img.image_contact {
-    width: 700px;
+    width: 600px;
 }
-
+.row_accueil .img img.image_localisation {
+    width: 300px;
+}
 textarea {
     width : 700px
 }
