@@ -764,7 +764,7 @@ footer li.active a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-principale700);
+    background: var(--color-principale500);
     border-radius: 50% 50% 0 0;
     transition: all .5s;
     z-index: -1;
