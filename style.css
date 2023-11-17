@@ -199,7 +199,7 @@ footer {
     bottom: 0;
     left: 0;
     color: var(--color-black);
-    z-index: 9999;
+    z-index: 9;
 }
 
 footer .plan_site, footer .entreprise {
@@ -502,6 +502,66 @@ footer .cnil_link {
     background-color: var(--color-comp1-3);
 }
 
+.row_accueil.competences.comp2 table td.title {
+    background-color: var(--color-comp2-1);
+}
+
+.row_accueil.competences.comp2 table tr:nth-child(2) {
+    background-color: var(--color-comp2-2);
+}
+
+.row_accueil.competences.comp2 table tr:nth-child(3) {
+    background-color: var(--color-comp2-3);
+}
+
+.row_accueil.competences.comp3 table td.title {
+    background-color: var(--color-comp3-1);
+}
+
+.row_accueil.competences.comp3 table tr:nth-child(2) {
+    background-color: var(--color-comp3-2);
+}
+
+.row_accueil.competences.comp3 table tr:nth-child(3) {
+    background-color: var(--color-comp3-3);
+}
+
+.row_accueil.competences.comp4 table td.title {
+    background-color: var(--color-comp4-1);
+}
+
+.row_accueil.competences.comp4 table tr:nth-child(2) {
+    background-color: var(--color-comp4-2);
+}
+
+.row_accueil.competences.comp4 table tr:nth-child(3) {
+    background-color: var(--color-comp4-3);
+}
+
+.row_accueil.competences.comp5 table td.title {
+    background-color: var(--color-comp5-1);
+}
+
+.row_accueil.competences.comp5 table tr:nth-child(2) {
+    background-color: var(--color-comp5-2);
+}
+
+.row_accueil.competences.comp5 table tr:nth-child(3) {
+    background-color: var(--color-comp5-3);
+}
+
+.row_accueil.competences.comp6 table td.title {
+    background-color: var(--color-comp6-1);
+}
+
+.row_accueil.competences.comp6 table tr:nth-child(2) {
+    background-color: var(--color-comp6-2);
+}
+
+.row_accueil.competences.comp6 table tr:nth-child(3) {
+    background-color: var(--color-comp6-3);
+}
+
 .row_accueil.competences .column {
     width: 100%;
 }
@@ -548,8 +608,28 @@ footer .cnil_link {
     margin-left: 10px;
 }
 
-.content_ressource li.title_list span {
+.competences.comp1 li.title_list span {
     color: var(--color-comp1-1);
+}
+
+.competences.comp2 li.title_list span {
+    color: var(--color-comp2-1);
+}
+
+.competences.comp3 li.title_list span {
+    color: var(--color-comp3-1);
+}
+
+.competences.comp4 li.title_list span {
+    color: var(--color-comp4-1);
+}
+
+.competences.comp5 li.title_list span {
+    color: var(--color-comp5-1);
+}
+
+.competences.comp6 li.title_list span {
+    color: var(--color-comp6-1);
 }
 
 /* constact page */
