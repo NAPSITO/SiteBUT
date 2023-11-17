@@ -480,11 +480,11 @@ footer .cnil_link {
     margin-left: 20px;
 }
 
-.row_accueil.competences table td.title {
+.competences table td.title {
     font-weight: 600;
 }
 
-.row_accueil.competences table td {
+.competences table td {
     width: 5%;
     text-align: center;
     padding-block: 10px;
@@ -630,6 +630,39 @@ footer .cnil_link {
 
 .competences.comp6 li.title_list span {
     color: var(--color-comp6-1);
+}
+
+/* presentation but */
+.row_accueil.presentation_comp .column {
+    width: 100%;
+}
+
+.row_accueil.presentation_comp .row.competences {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.row_accueil.presentation_comp .row.competences p.regles {
+    text-align: left;
+    width: 40%;
+}
+
+.row_accueil.presentation_comp .row.competences table {
+    width: 50%;
+    border: 2px solid var(--color-black);
+    border-collapse: collapse;
+}
+
+.row_accueil.presentation_comp .row.competences td {
+    border: 1px solid var(--color-black);
+    width: auto;
+}
+
+.row_accueil.presentation_comp .row.competences td.title_comps {
+    color: var(--color-principale700);
+    font-weight: 900;
 }
 
 /* constact page */
