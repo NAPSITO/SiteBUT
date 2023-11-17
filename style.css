@@ -467,6 +467,92 @@ footer .cnil_link {
     transform: scale(1.1);
 }
 
+/* competence page */
+.row_accueil .row img.image_comp {
+    width: 22vw;
+}
+
+.row_accueil.competences .column {
+    width: 100%;
+}
+
+.row_accueil.competences .column ul {
+    margin-left: 20px;
+}
+
+.row_accueil.competences table td.title {
+    font-weight: 600;
+}
+
+.row_accueil.competences table td {
+    width: 5%;
+    text-align: center;
+    padding-block: 10px;
+}
+
+.row_accueil.competences.comp1 table td.title {
+    background-color: var(--color-comp1-1);
+}
+
+.row_accueil.competences.comp1 table tr:nth-child(2) {
+    background-color: var(--color-comp1-2);
+}
+
+.row_accueil.competences.comp1 table tr:nth-child(3) {
+    background-color: var(--color-comp1-3);
+}
+
+.row_accueil.competences .column {
+    width: 100%;
+}
+
+.row_accueil.competences .column .content_ressource {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 5px var(--color-black);
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: all .2s ease-in-out;
+    animation: fadeInCard .45s .2s forwards;
+    opacity: 0;
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 1em;
+}
+
+.row_accueil.competences .column .content_ressource:not(:nth-child(1)) {
+    margin-top: 30px;
+}
+
+.row.content_ressource img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.content_ressource li {
+    margin-left: 30px;
+}
+
+.content_ressource p {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.content_ressource p .ref_etudie {
+    margin-top: 25px;
+}
+
+.content_ressource li.title_list {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.content_ressource li.title_list span {
+    color: var(--color-comp1-1);
+}
+
+/* constact page */
 .formulaire2 {
     margin-left : 200px;
 }
@@ -483,6 +569,7 @@ footer .cnil_link {
 textarea {
     width : 700px
 }
+
 /* animations */
 @keyframes fadeInRow {
     from {
