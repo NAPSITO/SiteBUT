@@ -481,6 +481,13 @@ footer li.active a {
 }
 
 /* competence page */
+.row_accueil.competences .column h2 {
+    font-size: 1.1em;
+    color: var(--color-black2);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 .row_accueil .row img.image_comp {
     width: 22vw;
 }
@@ -666,6 +673,10 @@ footer li.active a {
     width: 50%;
     border: 2px solid var(--color-black);
     border-collapse: collapse;
+}
+
+.row_accueil.presentation_comp .row.competences table.first {
+    margin-right: 40px;
 }
 
 .row_accueil.presentation_comp .row.competences td {
