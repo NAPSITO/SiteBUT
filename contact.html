@@ -37,29 +37,26 @@
     </header>
 
     <div class="body_content">
-        <H1> Page de contact de l'IUT</H1>
-        <div class="row_accueil">
-            <div class="column">
-                <p>Entrez vos informations pour nous contacter</p>
+        <div class="row_accueil contact">
+            <div class="column contact_content">
+                <h1>Entrez vos informations pour nous contacter</h1>
                 <div class="row">
-                    <div class="column">
-                        <form class="formulaire1">
-                            <label for="prenom">Prénom :</label><br>
-                            <input type="text" id="prenom" name="prenom"><br><br>
-                        </form>
-                        <form class="formulaire1">
-                            <label for="Nom">Nom :</label><br>
-                            <input type="text" id="Nom" name="Nom"><br><br>
-                        </form>
-                        <form class="formulaire1">
-                            <label for="adresse">Adresse :</label><br>
-                            <input type="text" id="Adresse" name="Adresse"><br><br>
-                        </form>
-                    </div>
-                    <form class="formulaire2">
-                        <label for="Message">Message :</label><br>
-                        <textarea id="Message" name="Message" rows="10"></textarea><br><br>
-                        <input type="submit" value="Envoyer">
+                    <form class="formulaire" method="get">
+                        <div class="column">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="Prénom" required placeholder="Prénom">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="Nom" required placeholder="Nom">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="Email" required placeholder="Email">
+                            <button type="submit" value="Envoyer"class="btn_envoyer">
+                                <span>Envoyer</span>
+                            </button>
+                        </div>
+                        <div class="message_input_box column">
+                            <label for="Message">Message :</label>
+                            <textarea id="Message" name="Message" required placeholder="Ecrivez votre message ici"></textarea>
+                        </div>
                     </form>
                 </div>
             </div>

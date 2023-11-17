@@ -10,6 +10,7 @@
     --color-grey: #dcdcdc;
     --color-grey2: #efefed;
     --color-black: #292929;
+    --color-black2: #858585;
 
     --color-comp1-1: #d08a77;
     --color-comp1-2: #e8c5bb;
@@ -44,7 +45,8 @@
     font-family: "Poppins";
 }
 
-img, a {
+img,
+a {
     -webkit-user-drag: none;
 }
 
@@ -202,7 +204,8 @@ footer {
     z-index: 9;
 }
 
-footer .plan_site, footer .entreprise {
+footer .plan_site,
+footer .entreprise {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -213,7 +216,8 @@ footer .plan_site {
     margin-bottom: 30px;
 }
 
-footer .plan_site li, footer .entreprise li {
+footer .plan_site li,
+footer .entreprise li {
     margin: 12px 0;
 }
 
@@ -237,7 +241,8 @@ footer .entreprise li {
     margin-left: 20px;
 }
 
-.plan_site li a, .entreprise li {
+.plan_site li a,
+.entreprise li {
     font-weight: 500;
     font-size: 21px;
     text-decoration: none;
@@ -274,7 +279,9 @@ footer .entreprise li {
     transition: color .15s ease-in;
 }
 
-footer .cnil_link a, footer .entreprise h3, footer .entreprise li {
+footer .cnil_link a,
+footer .entreprise h3,
+footer .entreprise li {
     font-size: 16px;
 }
 
@@ -286,11 +293,13 @@ footer .cnil_link {
     align-self: flex-end;
 }
 
-.nav_links li.hover.active:after, footer li.active a:after {
+.nav_links li.hover.active:after,
+footer li.active a:after {
     transform: scaleX(100%);
 }
 
-.nav_links li.hover.active a, footer li.active a {
+.nav_links li.hover.active a,
+footer li.active a {
     color: var(--color-principale600);
 }
 
@@ -307,7 +316,8 @@ footer .cnil_link {
     width: 100%;
 }
 
-.body_content .animate, .body_content .animate_reverse {
+.body_content .animate,
+.body_content .animate_reverse {
     transition: all .2s ease-in-out;
     opacity: 0;
 }
@@ -353,6 +363,7 @@ footer .cnil_link {
     font-size: 1.05em;
     line-height: 1.55;
 }
+
 .row_accueil .column .source {
     margin-top: 8px;
     font-style: italic;
@@ -363,11 +374,13 @@ footer .cnil_link {
     margin-left: 5px;
 }
 
-.row_accueil .source a:hover, .iut_info ul a:hover {
+.row_accueil .source a:hover,
+.iut_info ul a:hover {
     color: var(--color-principale500);
 }
 
-.iut_info a img, .vie_etudiante a img {
+.iut_info a img,
+.vie_etudiante a img {
     transition: transform .1s ease-in-out;
 }
 
@@ -666,23 +679,113 @@ footer .cnil_link {
 }
 
 /* constact page */
-.formulaire2 {
-    margin-left : 200px;
+.contact .column.contact_content {
+    width: 100%;
 }
-.formulaire1 input {
-    width: 30vw;
-    height: 40px;
-    margin-inline:10px;
+
+.contact .column.contact_content .row {
+    width: 100%;
+    font-size: 1em;
+}
+
+.contact .column.contact_content form.formulaire {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.column.contact_content form.formulaire .column {
+    width: 30%;
+}
+
+.contact_content form.formulaire .column label {
+    margin-top: 15px;
+}
+
+.contact_content form.formulaire .column input {
+    width: 100%;
+    padding: 15px;
+    margin-block: 5px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid var(--color-black2);
+    font-size: .9em;
+}
+
+.contact_content form.formulaire .column input:focus,
+.contact_content form.formulaire .message_input_box textarea:focus {
+    border: 2px solid var(--color-principale600);
+}
+
+.contact_content form.formulaire .column button.btn_envoyer {
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 1.05em;
+    letter-spacing: .6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-weight: 600;
+    z-index: 0;
+    position: relative;
+    text-decoration: none;
+    height: 60px;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+.btn_envoyer::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-principale700);
+    border-radius: 50% 50% 0 0;
+    transition: all .5s;
+    z-index: -1;
+}
+
+.btn_envoyer:hover::before {
+    top: 0;
+    border-radius: 0;
+}
+
+.btn_envoyer:hover span {
+    text-shadow: 1px 1px 2px var(--color-black);
+}
+
+.contact_content form.formulaire .message_input_box.column {
+    width: 100%;
+    margin-left: 35px;
+    height: 100%;
+}
+
+.contact_content form.formulaire .message_input_box textarea {
+    width: 40%;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid var(--color-black2);
+    font-size: .9em;
 }
 
 .row_accueil .img img.image_contact {
     width: 600px;
 }
+
 .row_accueil .img img.image_localisation {
     width: 300px;
-}
-textarea {
-    width : 700px
 }
 
 /* animations */
@@ -691,6 +794,7 @@ textarea {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -702,6 +806,7 @@ textarea {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -713,6 +818,7 @@ textarea {
         transform: scale(.9);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
