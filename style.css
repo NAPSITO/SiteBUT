@@ -54,7 +54,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding-top: 18vh;
+    padding-top: 160px;
 }
 
 .column {
@@ -74,7 +74,6 @@ body {
 /* header */
 header {
     width: 100%;
-    /* height: 90px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -102,7 +101,7 @@ header .header_top {
 }
 
 header .header_top img {
-    height: 9vh;
+    height: 80px;
 }
 
 .nav_links {
@@ -122,6 +121,7 @@ header .header_top img {
     padding: 0px 10px;
     cursor: pointer;
     padding-bottom: 10px;
+    white-space: nowrap;
 }
 
 .nav_links li i {
@@ -185,6 +185,19 @@ header .header_top img {
     color: var(--color-black);
     transition: background-color 0.3s;
     white-space: nowrap;
+}
+
+/* icone hamburger pour le menu responsive */
+.menu_hamburger {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    font-size: 2.8em;
+    color: var(--color-black);
+    display: none;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 99999;
 }
 
 /* footer */
@@ -628,6 +641,18 @@ footer li.active a {
     margin-left: 10px;
 }
 
+.content_ressource .column .column {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px var(--color-black2) solid;
+}
+
+.content_ressource .column .column:nth-last-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
 .competences.comp1 li.title_list span {
     color: var(--color-comp1-1);
 }
@@ -861,5 +886,52 @@ footer li.active a {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* media queries pour le responsive */
+@media screen and (max-width: 680px) {
+    header .nav_links li {
+        margin: 0 1%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 25px;
+    }
+    header {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        margin-left: 100%;
+        padding-block: 90px;
+        transition: margin .5s ease-out;
+        overflow-y: auto;
+        border-bottom: none;
+        border-left: 2px solid var(--color-grey);
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+    }
+    header ul.nav_links li {
+        font-size: 17px;
+        height: 40px;
+        margin-inline: 0;
+        margin-block: 15px;
+    }
+    .menu_hamburger {
+        display: block;
+        visibility: visible;
+    }
+    #menuCheckbox {
+        display: none;
+    }
+    #menuCheckbox:checked ~ header {
+        margin-left: 0;
     }
 }
