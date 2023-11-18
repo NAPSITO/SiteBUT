@@ -641,6 +641,18 @@ footer li.active a {
     margin-left: 10px;
 }
 
+.content_ressource .column .column {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px var(--color-black2) solid;
+}
+
+.content_ressource .column .column:nth-last-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
 .competences.comp1 li.title_list span {
     color: var(--color-comp1-1);
 }
