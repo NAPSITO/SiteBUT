@@ -191,7 +191,7 @@ header .header_top img {
     position: fixed;
     top: 20px;
     right: 25px;
-    font-size: 2.8em;
+    font-size: 2em;
     color: var(--color-black);
     display: none;
     cursor: pointer;
@@ -208,7 +208,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     padding-block: 15px;
     margin-top: 35px;
     background: var(--color-white);
@@ -220,6 +221,15 @@ footer {
     z-index: 9;
 }
 
+footer .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 footer .plan_site,
 footer .entreprise {
     display: flex;
@@ -228,13 +238,10 @@ footer .entreprise {
     flex-direction: column;
 }
 
-footer .plan_site {
-    margin-bottom: 30px;
-}
-
 footer .plan_site li,
 footer .entreprise li {
     margin: 12px 0;
+    white-space: nowrap;
 }
 
 footer .plan_site ul li.first {
@@ -270,7 +277,7 @@ footer .entreprise li {
     cursor: pointer;
     padding: 0 5px;
     padding-bottom: 2px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .plan_site li a:after {
@@ -297,16 +304,13 @@ footer .entreprise li {
 
 footer .cnil_link a,
 footer .entreprise h3,
-footer .entreprise li {
-    font-size: 16px;
+footer .entreprise li,
+footer .plan_site p {
+    font-size: 1em;
 }
 
 footer .cnil_link a:hover {
     color: var(--color-principale500);
-}
-
-footer .cnil_link {
-    align-self: flex-end;
 }
 
 .nav_links li.hover.active:after,
@@ -1051,7 +1055,7 @@ footer li.active a {
     }
     .row_accueil.contact.bottom .row {
         margin-top: 30px;
-        font-size: clamp(.95em, 2vw, 1.05em);
+        font-size: clamp(.9em, 2vw, 1em);
         height: 40vh;
     }
     .row_accueil.contact.bottom img.image_localisation {
@@ -1092,6 +1096,9 @@ footer li.active a {
     .nav_links li {
         padding-bottom: 5px;
     }
+    .nav_links li {
+        font-size: clamp(.9em, 2vw, 1em);
+    }
     .menu_hamburger {
         display: block;
         visibility: visible;
@@ -1102,6 +1109,7 @@ footer li.active a {
     header .header_top {
         justify-content: center;
         flex-direction: column;
+        margin-top: 10px;
     }
     header .header_top img {
         height: 70px;
@@ -1118,5 +1126,30 @@ footer li.active a {
         display: block;
         text-align: center;
         padding: 0px 5px 5px 5px;
+    }
+    footer {
+        padding-block: 10px;
+        margin-top: 20px;
+        padding-inline: 20px;
+    }
+    footer .row {
+        margin-bottom: 5px;
+    }
+    footer .plan_site li,
+    footer .entreprise li {
+        margin-block: 10px;
+    }
+    footer .plan_site ul li ul li {
+        margin-left: 10px;
+    }
+    .plan_site li a,
+    .entreprise li {
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+    footer .cnil_link a,
+    footer .entreprise h3,
+    footer .entreprise li,
+    footer .plan_site ul li p {
+        font-size: clamp(.85em, 2vw, 1em);
     }
 }
