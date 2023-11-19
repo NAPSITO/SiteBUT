@@ -151,7 +151,7 @@ header .header_top img {
 }
 
 .nav_links li.hover:hover:after {
-    transform: scaleX(100%);
+    transform: scaleX(1);
 }
 
 .nav_links li.hover:hover a {
@@ -287,7 +287,7 @@ footer .entreprise li {
 }
 
 .plan_site a:hover:after {
-    transform: scaleX(100%);
+    transform: scaleX(1);
 }
 
 .plan_site a:hover {
@@ -311,7 +311,7 @@ footer .cnil_link {
 
 .nav_links li.hover.active:after,
 footer li.active a:after {
-    transform: scaleX(100%);
+    transform: scaleX(1);
 }
 
 .nav_links li.hover.active a,
