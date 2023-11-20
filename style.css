@@ -630,6 +630,10 @@ footer li.active a {
     font-size: 1em;
 }
 
+.row_accueil.competences .column .content_ressource p {
+    font-size: 1em;
+}
+
 .row_accueil.competences .column .content_ressource:not(:nth-child(1)) {
     margin-top: 30px;
 }
@@ -726,7 +730,7 @@ footer li.active a {
     font-weight: 900;
 }
 
-/* constact page */
+/* contact page */
 .contact .column.contact_content {
     width: 100%;
 }
@@ -993,9 +997,14 @@ footer li.active a {
         padding-block: 2%;
         font-size: clamp(.85em, 2vw, 1em);
     }
-    .row_accueil.competences p, .row_accueil.competences li,
+    .row_accueil.competences p,
+    .row_accueil.competences li,
     .row_accueil.competences .column .content_ressource {
         font-size: clamp(.85em, 2vw, 1em);
+    }
+    .row_accueil.competences .column .content_ressource p,
+    .row_accueil.competences .column .content_ressource li {
+        font-size: 1em;
     }
     .row_accueil.competences .column ul.niv1,
     .row_accueil.competences .content_ressource .column ul {
@@ -1159,7 +1168,8 @@ footer li.active a {
 @media screen and (max-width: 440px) {
     .body_content .row_accueil.but_history .row,
     .body_content .row_accueil.iut_info .row,
-    .body_content .row_accueil.liste_competences .row.content_liste_competences {
+    .body_content .row_accueil.liste_competences .row.content_liste_competences,
+    .body_content .row_accueil.competences .column .row {
         flex-direction: column;
         align-items: center;
         justify-content: start;
@@ -1195,5 +1205,29 @@ footer li.active a {
     }
     .row.reverse img {
         margin: 10px 0;
+    }
+    .column.contact_content form.formulaire .column {
+        width: 50%;
+    }
+    .contact_content form.formulaire .message_input_box textarea {
+        height: 275px;
+        max-height: 275px;
+    }
+    .row_accueil.contact.bottom .row {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 20px;
+        height: auto;
+    }
+    .row_accueil.contact.bottom .row .column {
+        align-items: center;
+    }
+    .row_accueil.contact.bottom img.image_contact {
+        width: 60%;
+    }
+    .row_accueil.contact.bottom img.image_localisation {
+        width: 70%;
+        margin-top: 10px;
     }
 }
