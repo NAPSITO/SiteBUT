@@ -907,7 +907,7 @@ footer li.active a {
     }
 }
 
-/* media queries pour le responsive */
+/* media querie pour le responsive */
 @media screen and (max-width: 900px) {
     body {
         padding-top: 150px;
@@ -938,12 +938,14 @@ footer li.active a {
         transform: translateX(0);
     }
     .body_content .row_accueil .column p {
-        font-size: clamp(.9em, 2vw, 1em);
+        font-size: clamp(.85em, 2vw, 1em);
         line-height: 1.32;
     }
     .row_accueil .column .source {
         margin-top: 5px;
-        font-size: clamp(.85em, 2vw, .95em);
+    }
+    .row_accueil .column .source a {
+        font-size: clamp(.8em, 2vw, .95em);
     }
     .body_content .row_accueil.iut_info .column .row .column {
         margin-left: 3%;
@@ -951,7 +953,7 @@ footer li.active a {
     .row_accueil.iut_info ul {
         margin-block: 5px;
         margin-left: 0;
-        font-size: clamp(.9em, 2vw, 1em);
+        font-size: clamp(.85em, 2vw, 1em);
     }
     .row_accueil .row ul li {
         line-height: 1.4;
@@ -962,7 +964,7 @@ footer li.active a {
     .row_accueil.liste_competences .column a.content_liste_competences {
         padding: 10px;
         margin-top: 5px;
-        font-size: clamp(.9em, 2vw, 1em);
+        font-size: clamp(.85em, 2vw, 1em);
         line-height: 1;
     }
     .row_accueil.liste_competences .column a.content_liste_competences:not(:nth-child(1)) {
@@ -993,7 +995,7 @@ footer li.active a {
     }
     .row_accueil.competences p, .row_accueil.competences li,
     .row_accueil.competences .column .content_ressource {
-        font-size: clamp(.9em, 2vw, 1em);
+        font-size: clamp(.85em, 2vw, 1em);
     }
     .row_accueil.competences .column ul.niv1,
     .row_accueil.competences .content_ressource .column ul {
@@ -1018,7 +1020,7 @@ footer li.active a {
         margin-bottom: 10px;
     }
     .contact .column.contact_content .row {
-        font-size: clamp(.9em, 2vw, 1em);
+        font-size: clamp(.85em, 2vw, 1em);
     }
     .contact .column.contact_content form.formulaire {
         align-items: flex-start;
@@ -1055,7 +1057,7 @@ footer li.active a {
     }
     .row_accueil.contact.bottom .row {
         margin-top: 30px;
-        font-size: clamp(.9em, 2vw, 1em);
+        font-size: clamp(.85em, 2vw, 1em);
         height: 40vh;
     }
     .row_accueil.contact.bottom img.image_localisation {
@@ -1151,5 +1153,47 @@ footer li.active a {
     footer .entreprise li,
     footer .plan_site ul li p {
         font-size: clamp(.85em, 2vw, 1em);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .body_content .row_accueil.but_history .row,
+    .body_content .row_accueil.iut_info .row,
+    .body_content .row_accueil.liste_competences .row.content_liste_competences {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+    .body_content hr {
+        margin-block: 10px;
+    }
+    .body_content .row_accueil h1 {
+        font-size: 1em;
+    }
+    .body_content .row_accueil img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .body_content .row_accueil .column p {
+        line-height: 1.15;
+    }
+    .row_accueil .column .source.row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .row_accueil.iut_info ul {
+        margin-block: 5px 2px;
+    }
+    .row_accueil .row ul li {
+        margin-left: 20px;
+        line-height: 1.3;
+    }
+    .row_accueil.vie_etudiante .row.reverse {
+        flex-direction: column-reverse;
+    }
+    .row.reverse img {
+        margin: 10px 0;
     }
 }
