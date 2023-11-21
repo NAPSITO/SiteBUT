@@ -725,7 +725,8 @@ footer li.active a {
 }
 
 .row_accueil.presentation_comp .row.competences p.regles {
-    text-align: left;
+    text-align: center;
+    margin-block: auto;
     width: 40%;
 }
 
@@ -743,6 +744,33 @@ footer li.active a {
 .row_accueil.presentation_comp .row.competences td.title_comps {
     color: var(--color-principale700);
     font-weight: 900;
+}
+
+.row_accueil.presentation_comp img {
+    width: 20vw;
+}
+
+.row_accueil.presentation_comp .grille_ressources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+.row_accueil.presentation_comp .grille_ressources .item_grid {
+    padding: 20px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 5px var(--color-black);
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+    animation: fadeInCard .45s .2s forwards;
+    opacity: 0;
+    color: var(--color-black);
+    font-size: 1em;
+}
+
+.row_accueil.presentation_comp .grille_ressources .item_grid p strong {
+    color: var(--color-principale600);
 }
 
 /* contact page */
