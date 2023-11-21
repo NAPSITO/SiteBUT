@@ -748,6 +748,7 @@ footer li.active a {
 
 .row_accueil.presentation_comp img {
     width: 20vw;
+    min-width: 200px;
 }
 
 .row_accueil.presentation_comp .grille_ressources {
@@ -758,7 +759,7 @@ footer li.active a {
 }
 
 .row_accueil.presentation_comp .grille_ressources .item_grid {
-    padding: 20px;
+    padding: 30px;
     background-color: var(--color-white);
     box-shadow: 0 0 5px var(--color-black);
     border-radius: 15px;
