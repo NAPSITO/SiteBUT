@@ -203,6 +203,21 @@ header .header_top img {
     display: none;
 }
 
+/* checkbox theme sombre */
+input.chkTheme:checked + label.chkTheme {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    display: flex;
+}
+
+input.chkTheme:checked + label.chkTheme::before {
+    content: 'Désactiver le mode sombre';
+}
+
 /* footer */
 footer {
     width: 100%;
