@@ -4,19 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site du BUT | Compétence 1</title>
+    <title>Site du BUT | Contact</title>
+    <meta name="description" content="Site internet du BUT Informatique expliquant les compétences travaillées en première année" />
+    <link rel="shortcut icon" href="assets/images/logo-iut-info.ico" type="image/x-icon">
+    <link rel="canonical" href="https://unkn0wndfbx.github.io/SiteBUT/" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7a0b90407e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- menu responsive -->
+    <label for="menuCheckbox">
+        <i class="fa-solid fa-bars menu_hamburger"></i>
+    </label>
+    <input type="checkbox" id="menuCheckbox">
     <header>
         <div class="header_top">
             <div class="left">
                 <img src="assets/images/logo-UT3.jpg" alt="Logo Université Paul Sabatier">
-                <img src="assets/images/logo_iut_toulouse.jpg" alt="Logo IUT Toulouse">
+                <img src="assets/images/logo-iut-toulouse.jpg" alt="Logo IUT Toulouse">
             </div>
-            <img src="assets/images/logo_but_info.jpg" alt="Logo BUT Informatique">
+            <img src="assets/images/logo-but-info.jpg" alt="Logo BUT Informatique">
         </div>
         <ul class="nav_links">
             <li class="hover"><a href="index.html">Accueil<i class='fa-solid fa-home'></i></a></li>
@@ -49,7 +57,7 @@
                             <input type="text" id="nom" name="Nom" required placeholder="Nom">
                             <label for="email">Email :</label>
                             <input type="email" id="email" name="Email" required placeholder="Email">
-                            <button type="submit" value="Envoyer"class="btn_envoyer">
+                            <button type="submit" value="Envoyer" class="btn_envoyer">
                                 <span>Envoyer</span>
                             </button>
                         </div>
@@ -63,7 +71,7 @@
         </div>
         <div class="row_accueil contact bottom">
             <div class="row">
-                <img src="assets/images/photo_iut_info.jpg" class="image_contact" alt="Image IUT Info Toulouse">
+                <img src="assets/images/photo-iut-info.jpg" class="image_contact" alt="Image IUT Info Toulouse">
                 <div class="column">
                     <ul>
                         <li class="title_list"><strong>IUT Informatique</strong></li>
@@ -79,36 +87,39 @@
             </div>
         </div>
     </div>
+    
     <footer>
-        <div class="plan_site">
-            <ul>
-                <li class="first"><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation BUT</a></li>
-                <li>
-                    <p>Compétences</p>
-                    <ul>
-                        <li><a href="competence1.html">Compétence 1</a></li>
-                        <li><a href="competence2.html">Compétence 2</a></li>
-                        <li><a href="competence3.html">Compétence 3</a></li>
-                        <li><a href="competence4.html">Compétence 4</a></li>
-                        <li><a href="competence5.html">Compétence 5</a></li>
-                        <li><a href="competence6.html">Compétence 6</a></li>
-                    </ul>
-                </li>
-                <li class="last active"><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="row">
+            <div class="plan_site">
+                <ul>
+                    <li class="first"><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation BUT</a></li>
+                    <li>
+                        <p>Compétences</p>
+                        <ul>
+                            <li><a href="competence1.html">Compétence 1</a></li>
+                            <li><a href="competence2.html">Compétence 2</a></li>
+                            <li><a href="competence3.html">Compétence 3</a></li>
+                            <li><a href="competence4.html">Compétence 4</a></li>
+                            <li><a href="competence5.html">Compétence 5</a></li>
+                            <li><a href="competence6.html">Compétence 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="last active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="entreprise">
+                <h3>Equipe A2</h3>
+                <ul>
+                    <li>Raphael Brachais</li>
+                    <li>Titouan Helbert</li>
+                    <li>Natalia Ros</li>
+                    <li>Shun Von Lunen</li>
+                </ul>
+            </div>
         </div>
         <div class="cnil_link">
-            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">CNIL - RGPD</a>
-        </div>
-        <div class="entreprise">
-            <h3>Equipe A2</h3>
-            <ul>
-                <li>Raphael Brachais</li>
-                <li>Titouan Helbert</li>
-                <li>Natalia Ros</li>
-                <li>Shun Von Lunen</li>
-            </ul>
+            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank" rel="noopener">CNIL - RGPD</a>
         </div>
     </footer>
 </body>

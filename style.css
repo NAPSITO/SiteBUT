@@ -54,7 +54,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding-top: 18vh;
+    padding-top: 160px;
 }
 
 .column {
@@ -74,7 +74,6 @@ body {
 /* header */
 header {
     width: 100%;
-    /* height: 90px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -102,7 +101,7 @@ header .header_top {
 }
 
 header .header_top img {
-    height: 9vh;
+    height: 80px;
 }
 
 .nav_links {
@@ -122,6 +121,7 @@ header .header_top img {
     padding: 0px 10px;
     cursor: pointer;
     padding-bottom: 10px;
+    white-space: nowrap;
 }
 
 .nav_links li i {
@@ -132,10 +132,9 @@ header .header_top img {
 
 .nav_links li a {
     font-weight: 500;
-    font-size: 21px;
     text-decoration: none;
     color: var(--color-black);
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .nav_links li.hover:after {
@@ -152,7 +151,7 @@ header .header_top img {
 }
 
 .nav_links li.hover:hover:after {
-    transform: scaleX(100%);
+    transform: scaleX(1);
 }
 
 .nav_links li.hover:hover a {
@@ -187,12 +186,30 @@ header .header_top img {
     white-space: nowrap;
 }
 
+/* icone hamburger pour le menu responsive */
+.menu_hamburger {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    font-size: 2em;
+    color: var(--color-black);
+    display: none;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 99999;
+}
+
+#menuCheckbox {
+    display: none;
+}
+
 /* footer */
 footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     padding-block: 15px;
     margin-top: 35px;
     background: var(--color-white);
@@ -204,6 +221,15 @@ footer {
     z-index: 9;
 }
 
+footer .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 footer .plan_site,
 footer .entreprise {
     display: flex;
@@ -212,13 +238,10 @@ footer .entreprise {
     flex-direction: column;
 }
 
-footer .plan_site {
-    margin-bottom: 30px;
-}
-
 footer .plan_site li,
 footer .entreprise li {
     margin: 12px 0;
+    white-space: nowrap;
 }
 
 footer .plan_site ul li.first {
@@ -254,7 +277,7 @@ footer .entreprise li {
     cursor: pointer;
     padding: 0 5px;
     padding-bottom: 2px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .plan_site li a:after {
@@ -271,7 +294,7 @@ footer .entreprise li {
 }
 
 .plan_site a:hover:after {
-    transform: scaleX(100%);
+    transform: scaleX(1);
 }
 
 .plan_site a:hover {
@@ -281,21 +304,18 @@ footer .entreprise li {
 
 footer .cnil_link a,
 footer .entreprise h3,
-footer .entreprise li {
-    font-size: 16px;
+footer .entreprise li,
+footer .plan_site p {
+    font-size: 1em;
 }
 
 footer .cnil_link a:hover {
     color: var(--color-principale500);
 }
 
-footer .cnil_link {
-    align-self: flex-end;
-}
-
 .nav_links li.hover.active:after,
 footer li.active a:after {
-    transform: scaleX(100%);
+    transform: scaleX(1);
 }
 
 .nav_links li.hover.active a,
@@ -306,7 +326,7 @@ footer li.active a {
 /* page accueil */
 .body_content {
     padding-inline: 30px;
-    min-height: calc(100vh - (18vh + 43vh));
+    min-height: calc(100vh - (160px + 43vh));
 }
 
 .body_content .row_accueil {
@@ -324,10 +344,14 @@ footer li.active a {
 
 .body_content .animate {
     animation: fadeInRow .45s .25s forwards;
+    overflow: hidden;
+    max-width: 100vw;
 }
 
 .body_content .animate_reverse {
     animation: fadeInRowReverse .45s .6s forwards;
+    overflow: hidden;
+    max-width: 100vw;
 }
 
 .body_content hr {
@@ -356,6 +380,7 @@ footer li.active a {
 
 .body_content .row_accueil img {
     width: 11vw;
+    min-width: 120px;
     margin-right: 30px;
 }
 
@@ -408,6 +433,7 @@ footer li.active a {
     margin-left: 0;
 }
 
+/* liste des competences */
 .row_accueil.liste_competences .column {
     width: 100%;
 }
@@ -465,6 +491,7 @@ footer li.active a {
     margin-top: 30px;
 }
 
+/* vie etudiante */
 .row_accueil.vie_etudiante h1 {
     margin-bottom: 0;
 }
@@ -477,6 +504,7 @@ footer li.active a {
 .row.reverse img {
     margin-inline: 30px;
     width: 14vw;
+    min-width: 130px;
     transform: scale(1.1);
 }
 
@@ -490,6 +518,7 @@ footer li.active a {
 
 .row_accueil .row img.image_comp {
     width: 22vw;
+    min-width: 200px;
 }
 
 .row_accueil.competences .column {
@@ -601,6 +630,10 @@ footer li.active a {
     font-size: 1em;
 }
 
+.row_accueil.competences .column .content_ressource p {
+    font-size: 1em;
+}
+
 .row_accueil.competences .column .content_ressource:not(:nth-child(1)) {
     margin-top: 30px;
 }
@@ -619,13 +652,25 @@ footer li.active a {
     margin-top: 15px;
 }
 
-.content_ressource p .ref_etudie {
-    margin-top: 25px;
-}
-
 .content_ressource li.title_list {
     list-style: none;
     margin-left: 10px;
+}
+
+.content_ressource .column .column {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px var(--color-black2) solid;
+}
+
+.content_ressource .column .column h2 {
+    margin-bottom: 10px;
+}
+
+.content_ressource .column .column:nth-last-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    border-bottom: none;
 }
 
 .competences.comp1 li.title_list span {
@@ -685,7 +730,7 @@ footer li.active a {
     font-weight: 900;
 }
 
-/* constact page */
+/* contact page */
 .contact .column.contact_content {
     width: 100%;
 }
@@ -751,6 +796,7 @@ footer li.active a {
     width: 80%;
     margin-inline: auto;
     border-radius: 10px;
+    min-width: 100px;
 }
 
 .btn_envoyer::before {
@@ -817,12 +863,13 @@ footer li.active a {
 .row_accueil.contact.bottom img.image_contact {
     width: 35%;
     height: 98%;
+    min-height: 100%;
     object-fit: cover;
 }
 
 .row_accueil.contact.bottom img.image_localisation {
     width: 100%;
-    height: 60%;
+    height: 55%;
     object-fit: cover;
     margin-top: 10px;
 }
@@ -861,5 +908,326 @@ footer li.active a {
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* media querie pour le responsive */
+@media screen and (max-width: 900px) {
+    body {
+        padding-top: 150px;
+    }
+    header .nav_links li {
+        margin: 0 1%;
+    }
+    header .sous-menu li {
+        margin: 10px 5px;
+    }
+    .body_content {
+        padding-inline: 3%;
+    }
+    .body_content hr {
+        margin-block: 2vw;
+    }
+    .body_content .row_accueil h1 {
+        font-size: clamp(1.1em, 2.5vw, 1.25em);
+        margin-bottom: 10px;
+    }
+    .body_content .row_accueil img {
+        margin-right: 3%;
+    }
+    .body_content .animate,
+    .body_content .animate_reverse  {
+        animation: none;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .body_content .row_accueil .column p {
+        font-size: clamp(.85em, 2vw, 1em);
+        line-height: 1.32;
+    }
+    .row_accueil .column .source {
+        margin-top: 5px;
+    }
+    .row_accueil .column .source a {
+        font-size: clamp(.8em, 2vw, .95em);
+    }
+    .body_content .row_accueil.iut_info .column .row .column {
+        margin-left: 3%;
+    }
+    .row_accueil.iut_info ul {
+        margin-block: 5px;
+        margin-left: 0;
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+    .row_accueil .row ul li {
+        line-height: 1.4;
+    }
+    .row_accueil ul li.title_list {
+        line-height: 1.5;
+    }
+    .row_accueil.liste_competences .column a.content_liste_competences {
+        padding: 10px;
+        margin-top: 5px;
+        font-size: clamp(.85em, 2vw, 1em);
+        line-height: 1;
+    }
+    .row_accueil.liste_competences .column a.content_liste_competences:not(:nth-child(1)) {
+        margin-top: 20px;
+    }
+    .row.content_liste_competences img {
+        width: 30vw;
+    }
+    .row_accueil.liste_competences .source {
+        margin-top: 15px;
+    }
+    .row_accueil.vie_etudiante .row.reverse {
+        line-height: 1;
+    }
+    .row_accueil.vie_etudiante h1 {
+        margin-bottom: 5px;
+    }
+    .row.reverse img {
+        margin-inline: 15px;
+    }
+    .row_accueil.competences .column h2 {
+        font-size: clamp(.9em, 2vw, 1.1em);
+        line-height: 1;
+    }
+    .competences table td {
+        padding-block: 2%;
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+    .row_accueil.competences p,
+    .row_accueil.competences li,
+    .row_accueil.competences .column .content_ressource {
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+    .row_accueil.competences .column .content_ressource p,
+    .row_accueil.competences .column .content_ressource li {
+        font-size: 1em;
+    }
+    .row_accueil.competences .column ul.niv1,
+    .row_accueil.competences .content_ressource .column ul {
+        margin: 0;
+    }
+    .row_accueil.competences .column .content_ressource {
+        padding: 10px;
+        margin-top: 0;
+    }
+    .row_accueil.competences .column .content_ressource:not(:nth-child(1)) {
+        margin-top: 20px;
+    }
+    .content_ressource .column ul.niv1 li {
+        margin-left: 0px;
+    }
+    .content_ressource p {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .content_ressource .column .column {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .contact .column.contact_content .row {
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+    .contact .column.contact_content form.formulaire {
+        align-items: flex-start;
+    }
+    .column.contact_content form.formulaire .column {
+        width: 40%;
+    }
+    .contact_content form.formulaire .column label {
+        margin-top: 5px;
+    }
+    .contact_content form.formulaire .column input {
+        padding: 12px;
+        font-size: clamp(.85em, 2vw, .9em);
+    }
+    .contact_content form.formulaire .column button.btn_envoyer {
+        margin-top: 20px;
+        font-size: clamp(.95em, 2vw, 1.05em);
+        height: 45px;
+        width: 60%;
+    }
+    .contact_content form.formulaire .message_input_box.column {
+        width: 50%;
+    }
+    .contact_content form.formulaire .message_input_box textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: clamp(.85em, 2vw, .9em);
+        height: 280px;
+        max-height: 280px;
+        min-height: 45px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .row_accueil.contact.bottom .row {
+        margin-top: 30px;
+        font-size: clamp(.85em, 2vw, 1em);
+        height: 40vh;
+    }
+    .row_accueil.contact.bottom img.image_localisation {
+        width: 90%;
+        height: 40%;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 25px;
+    }
+    .body_content {
+        min-height: calc(100vh - (25px + 43vh));
+    }
+    header {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        margin-left: 100%;
+        padding-block: 50px;
+        transition: margin .5s ease-out;
+        overflow-y: auto;
+        border-bottom: none;
+        border-left: 2px solid var(--color-grey);
+    }
+    .nav_links {
+        flex-direction: column;
+    }
+    header ul.nav_links li {
+        margin-inline: 0;
+        margin-block: 8px;
+    }
+    .nav_links li {
+        padding-bottom: 5px;
+    }
+    .nav_links li {
+        font-size: clamp(.9em, 2vw, 1em);
+    }
+    .menu_hamburger {
+        display: block;
+        visibility: visible;
+    }
+    #menuCheckbox:checked ~ header {
+        margin-left: 0;
+    }
+    header .header_top {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    header .header_top img {
+        height: 70px;
+    }
+    .sous-menu {
+        display: block;
+        position: static;
+        margin-top: 5px;
+        padding-inline: 10px;
+        margin-top: 20px;
+        bottom: -278px;
+    }
+    .sous-menu li {
+        display: block;
+        text-align: center;
+        padding: 0px 5px 5px 5px;
+    }
+    footer {
+        padding-block: 10px;
+        margin-top: 20px;
+        padding-inline: 20px;
+    }
+    footer .row {
+        margin-bottom: 5px;
+    }
+    footer .plan_site li,
+    footer .entreprise li {
+        margin-block: 10px;
+    }
+    footer .plan_site ul li ul li {
+        margin-left: 10px;
+    }
+    .plan_site li a,
+    .entreprise li {
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+    footer .cnil_link a,
+    footer .entreprise h3,
+    footer .entreprise li,
+    footer .plan_site ul li p {
+        font-size: clamp(.85em, 2vw, 1em);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .body_content .row_accueil.but_history .row,
+    .body_content .row_accueil.iut_info .row,
+    .body_content .row_accueil.liste_competences .row.content_liste_competences,
+    .body_content .row_accueil.competences .column .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+    .body_content hr {
+        margin-block: 10px;
+    }
+    .body_content .row_accueil h1 {
+        font-size: 1em;
+    }
+    .body_content .row_accueil img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .body_content .row_accueil .column p {
+        line-height: 1.15;
+    }
+    .row_accueil .column .source.row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .row_accueil.iut_info ul {
+        margin-block: 5px 2px;
+    }
+    .row_accueil .row ul li {
+        margin-left: 20px;
+        line-height: 1.3;
+    }
+    .row_accueil.vie_etudiante .row.reverse {
+        flex-direction: column-reverse;
+    }
+    .row.reverse img {
+        margin: 10px 0;
+    }
+    .column.contact_content form.formulaire .column {
+        width: 50%;
+    }
+    .contact_content form.formulaire .message_input_box textarea {
+        height: 275px;
+        max-height: 275px;
+    }
+    .row_accueil.contact.bottom .row {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 20px;
+        height: auto;
+    }
+    .row_accueil.contact.bottom .row .column {
+        align-items: center;
+    }
+    .row_accueil.contact.bottom img.image_contact {
+        width: 60%;
+    }
+    .row_accueil.contact.bottom img.image_localisation {
+        width: 70%;
+        margin-top: 10px;
     }
 }

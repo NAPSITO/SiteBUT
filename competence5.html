@@ -4,19 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site du BUT | Compétence 2</title>
+    <title>Site du BUT | Compétence 5</title>
+    <meta name="description" content="Site internet du BUT Informatique expliquant les compétences travaillées en première année" />
+    <link rel="shortcut icon" href="assets/images/logo-iut-info.ico" type="image/x-icon">
+    <link rel="canonical" href="https://unkn0wndfbx.github.io/SiteBUT/" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7a0b90407e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- menu responsive -->
+    <label for="menuCheckbox">
+        <i class="fa-solid fa-bars menu_hamburger"></i>
+    </label>
+    <input type="checkbox" id="menuCheckbox">
     <header>
         <div class="header_top">
             <div class="left">
                 <img src="assets/images/logo-UT3.jpg" alt="Logo Université Paul Sabatier">
-                <img src="assets/images/logo_iut_toulouse.jpg" alt="Logo IUT Toulouse">
+                <img src="assets/images/logo-iut-toulouse.jpg" alt="Logo IUT Toulouse">
             </div>
-            <img src="assets/images/logo_but_info.jpg" alt="Logo BUT Informatique">
+            <img src="assets/images/logo-but-info.jpg" alt="Logo BUT Informatique">
         </div>
         <ul class="nav_links">
             <li class="hover"><a href="index.html">Accueil<i class='fa-solid fa-home'></i></a></li>
@@ -37,17 +45,16 @@
     </header>
 
     <div class="body_content">
-        <div class="row_accueil">
+        <div class="row_accueil competences">
             <div class="column">
                 <h1>Apprentissage critique du niveau 1</h1>
                 <div class="row">
-                    <img src="assets/images/image_comp5.png" alt="Image Compétence" class="image_comp">
-                    <ul>
-                        <li class="title_list"><strong>Développer des applications informatiques simples</strong></li>
-                        <li><strong>AC 1</strong> Implémenter des conceptions simples</li>
-                        <li><strong>AC 2</strong> Élaborer des conceptions simples</li>
-                        <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
-                        <li><strong>AC 4</strong> Développer des interfaces utilisateurs</li>
+                    <img src="assets/images/image-comp5.png" alt="Image Compétence" class="image_comp">
+                    <ul class="niv1">
+                        <li class="title_list"><strong>Identifier les besoins métiers des clients et des utilisateurs</strong></li>
+                        <li><strong>AC 1</strong> Appréhender les besoins du client et de l’utilisateur</li>
+                        <li><strong>AC 2</strong> Mettre en place les outils de gestion de projet</li>
+                        <li><strong>AC 3</strong> Identifier les acteurs et les différentes phases d’un cycle de développement</li>
                     </ul>
                 </div>
             </div>
@@ -62,29 +69,33 @@
                     <tr>
                         <td></td>
                         <td  class="title" colspan="3">Semestre 1</td>
-                        <td  class="title" colspan="4">Semestre 2</td>
+                        <td  class="title" colspan="6">Semestre 2</td>
                     </tr>
                     <tr>
                         <td>Ress</td>
-                        <td>R1.01</td>
                         <td>R1.02</td>
-                        <td>R1.10</td>
+                        <td>R1.08</td>
+                        <td>R1.11</td>
 
-                        <td>R2.01</td>
                         <td>R2.02</td>
                         <td>R2.03</td>
+                        <td>R2.07</td>
+                        <td>R2.10</td>
+                        <td>R2.12</td>
                         <td>R2.13</td>
                     </tr>
                     <tr>
                         <td>60%</td>
-                        <td>42%</td>
-                        <td>12%</td>
-                        <td>6%</td>
+                        <td>18%</td>
+                        <td>27%</td>
+                        <td>15%</td>
 
-                        <td>21%</td>
-                        <td>21%</td>
-                        <td>12%</td>
+                        <td>3%</td>
                         <td>6%</td>
+                        <td>6%</td>
+                        <td>30%</td>
+                        <td>6%</td>
+                        <td>9%</td>
                     </tr>
                 </table>
             </div>
@@ -92,17 +103,46 @@
 
         <hr>
 
-        <div class="row_accueil competences">
-            <div class="column">
-                <h1>SAE liée à la compétence</h1>
-                <p> Cette SAÉ permet une première mise en pratique du développement autour d'un besoin client .<br>
-                    En partant d'un besoin exprimé par un client, l'objectif est de réaliser une application qui réponde à ce besoin.
-                    <br> Livrables attendus dans le monde professionnel
-                </p>
-                <ul>
-                    <li>Code de l'application</li>
-                    <li>Traces d'exécution des jeux d'essais</li>
-                </ul>
+        <div class="row_accueil competences comp5">
+            <div class="row content_ressource">
+                <div class="column">
+                    <h1>SAÉ liées à la compétence</h1>
+                    <div class="column">
+                        <h2>Semestre 1</h2>
+                        <ul>
+                            <li class="title_list"><strong><span>S1.05 :</span> Recueil de besoins</strong></li>
+                            <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur</li>
+                            <li><strong>AC 3</strong> Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                        </ul>
+                        <p> Cette SAÉ permet une première approche du recueil de besoins à travers le
+                            dialogue continu avec le client pour affiner les attentes fonctionnelles.<br>
+                            <strong> Livrables attendus dans le monde professionnel</strong>
+                        </p>
+                        <ul>
+                            <li>Questionnaire destiné au client</li>
+                            <li>Présentation des besoins (maquettes, scénarios, persona…) s'appuyant sur des outils de bureautique</li>
+                            <li>Présentation orale accompagnée de différents supports numériques (site web, poster, affiche, powerpoint…)</li>
+                            <li>Script de création base de données</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                    <h2>Semestre 2</h2>
+                        <ul>
+                            <li class="title_list"><strong><span>S2.05 :</span> Gestion d’un projet</strong></li>
+                            <li><strong>AC 1</strong> Appréhender les besoins du client et de l’utilisateur</li>
+                            <li><strong>AC 2</strong> Mettre en place les outils de gestion de projet</li>
+                            <li><strong>AC 3</strong> Identifier les acteurs et les différentes phases d’un cycle de développement</li>
+                        </ul>
+                        <p> Cette SAÉ permet une familiarisation avec la conduite de projet à travers un sujet simple.<br>
+                            <strong> Livrables attendus dans le monde professionnel</strong>
+                        </p>
+                        <ul>
+                            <li>Cahier des charges</li>
+                            <li>Dossier de gestion de projet (Gantt, Pert, évaluation des ressources, calcul de budget)</li>
+                            <li>Étude de coûts</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -116,34 +156,8 @@
                     <div class="row content_ressource">
                         <div class="column">
                             <ul>
-                                <li class="title_list"><strong><span>R1.01 :</span> Initiation au développement</strong></li>
-                                <li><strong>AC 1</strong> Implémenter des conceptions simples</li>
-                                <li><strong>AC 2</strong> Élaborer des conceptions simples</li>
-                                <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
-                            </ul>
-                            <p>
-                                L'<strong>objectif</strong> de cette ressource est l'initiation au développement. Cette ressource est nécessaire pour la réalisation d'un
-                                développement d'application et l'optimisation des applications informatiques. <br>
-                            <p>
-                                <strong>Savoirs de référence étudiés</strong> <br>
-                                – Algorithmes fondamentaux (structures simples, recherche d'un élément, parcours, tri…) <br>
-                                – Algorithmes sur les structures de données (itératifs et/ou récursifs) <br>
-                                – Manipulation de listes, tableaux, collections dynamiques, statiques (accès direct ou séquentiels), piles, files,
-                                structures <br>
-                                – Types abstraits de données simples : première approche de l'encapsulation <br>
-                                – Notions de modularité <br>
-                                – Premières notions de qualité (par ex. : nommage, assertions, documentation, sûreté de fonctionnement, jeu d'essais,
-                                performance…) <br>
-                                – Lecture/écriture de fichiers <br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row content_ressource">
-                        <div class="column">
-                            <ul>
                                 <li class="title_list"><strong><span>R1.02 :</span> Développement d'interfaces web</strong></li>
-                                <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
-                                <li><strong>AC 4</strong> Développer des interfaces utilisateurs</li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur </li>
                             </ul>
                             <p>
                                 L'<strong>objectif</strong> de cette ressource est d'apprendre les techniques de création de documents numériques sur le web en
@@ -161,19 +175,156 @@
                     <div class="row content_ressource">
                         <div class="column">
                             <ul>
-                                <li class="title_list"><strong><span>R1.10 :</span> Anglais</strong></li>
-                                <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
-                                <li><strong>AC 4</strong> Développer des interfaces utilisateurs</li>
+                                <li class="title_list"><strong><span>R1.08 :</span> Introduction à la gestion des organisations </strong></li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur</li>
                             </ul>
                             <p>
-                                L'<strong>objectif</strong> de cette ressource est d'introduire l'anglais de spécialité informatique et de développer sa culture générale et
-                                scientifique. Cette ressource permet l'acquisition du vocabulaire de base de l'informatique. <br>
+                                L'<strong>objectif</strong> de cette ressource est de découvrir l'organisation et la transformation numérique. D'une part, la découverte de
+                                l'organisation permet une compréhension des enjeux et les besoins sous-jacents des projets internes et externes
+                                animant les acteurs qui la composent. Les défis organisationnels du XXIe siècle, comme la transformation numérique
+                                des organisations, amènent également à se questionner sur les évolutions informatiques et managériales dans le but
+                                de mieux appréhender l'écosystème numérique et le futur contexte professionnel. <br>
                             <p>
                                 <strong>Savoirs de référence étudiés</strong> <br>
-                                – Vocabulaire de base de l'informatique et de la bureautique <br>
-                                – Initiation aux techniques de présentation orale <br>
-                                – Compréhension des ressources à l'écrit et à l'oral (par ex. : documentations, tutoriels, documents scientifiques
-                                d'actualité…) <br>
+                                – Fondement des organisations<br>
+                                – Caractéristiques stratégiques et structurelles des organisations<br>
+                                – Enjeux de la transformation numérique des organisations<br>
+                                – Les différents savoirs de référence pourront être approfondis<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content_ressource">
+                        <div class="column">
+                            <ul>
+                                <li class="title_list"><strong><span>R1.11 :</span> Bases de la communication</strong></li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur</li>
+                                <li><strong>AC 3</strong> Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                            </ul>
+                            <p>
+                                L'<strong>objectif</strong> de cette ressource est d'aborder les fondamentaux de la communication. Cette ressource permet une
+                                approche sur l'importance de bien communiquer face à un client, de formuler ses questions de manière claire et
+                                pertinente pour recueillir les besoins du client. Elle permet de développer l'esprit critique et la capacité d'analyse
+                                nécessaires à la collecte d'informations. Enfin, la ressource permet la mise en place et l'appropriation d'outils de
+                                communication pour restituer les informations (sous formes diverses du papier au web) à destination d'un client ou
+                                d'une équipe. <br>
+                            <p>
+                                <strong>Savoirs de référence étudiés</strong> <br>
+                                – Communication verbale et non verbale<br>
+                                – Recherche documentaire, appropriation, réutilisation de l'information, prise de notes, analyse critique des sources<br>
+                                – Développement d'une attitude critique<br>
+                                – Recueil des besoins (méthode de collecte, d'enquête, d'interview)<br>
+                                – Conception de documents de communication (sous divers formats dont numériques)<br>
+                                – Les différents savoirs de référence pourront être approfondis<br>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <h2>Semestre 2</h2>
+                    <div class="row content_ressource">
+                        <div class="column">
+                            <ul>
+                                <li class="title_list"><strong><span>R2.02 :</span> Développement d’applications avec IHM</strong></li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur </li>
+                            </ul>
+                            <p>
+                                L'<strong>objectif</strong> de cette ressource est d'initier au développement d'une application avec une IHM. La réalisation d'un
+                                développement d'application passe par la capacité à produire des applications avec des interfaces utilisateurs. <br>
+                            <p>
+                                <strong>Savoirs de référence étudiés</strong> <br>
+                                – Programmation événementielle<br>
+                                – Programmation d'interfaces utilisateurs, utilisation de composants graphiques<br>
+                                – Compréhension et mise en place de la séparation entre la vue et le modèle<br>
+                                – Liaison de données entre propriétés (databinding, master/detail)<br>
+                                – Sensibilisation à l'ergonomie<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content_ressource">
+                        <div class="column">
+                            <ul>
+                                <li class="title_list"><strong><span>R2.03 :</span> Qualité de développement</strong></li>
+                                <li><strong>AC 2</strong> Mettre en place les outils de gestion de projet </li>
+                            </ul>
+                            <p>
+                                L'<strong>objectif</strong> de cette ressource est d'initier à la qualité de développement. Cette ressource permet de se familiariser avec
+                                la mécanique de tests, qui est fondamentale à la réalisation d'un développement d'application. Enfin, l'initiation à
+                                l'utilisation d'un outil de gestion de version apporte une première mise en pratique des outils de gestion de projet. <br>
+                            <p>
+                                <strong>Savoirs de référence étudiés</strong> <br>
+                                – Première approche de la gestion des cas d'erreurs (par ex. : exceptions…)<br>
+                                – Sensibilisation à la production de tests unitaires<br>
+                                – Automatisation de tests unitaires<br>
+                                – Traces et utilisation d'outils de débogage<br>
+                                – Utilisation d'un outil de gestion de versions<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content_ressource">
+                        <div class="column">
+                            <ul>
+                                <li class="title_list"><strong><span>R2.07 :</span> Graphes</strong></li>
+                                <li><strong>AC 2</strong> Mettre en place les outils de gestion de projet </li>
+                            </ul>
+                            <p>
+                                L'<strong>objectif</strong> de cette ressource est de faire découvrir les graphes et l'utilisation de ces derniers à travers des algorithmes
+                                simples et des situations courantes de programmation. Elle permet d'appréhender le concept de graphe d'un point de
+                                vue mathématique et algorithmique. Elle présente les problèmes classiques qui font intervenir cette notion et compare
+                                les méthodes de résolution usuelles.<br>
+                            <p>
+                                <strong>Savoirs de référence étudiés</strong> <br>
+                                – Graphes orientés et non orientés, concepts et outils, arbres<br>
+                                – Parcours<br>
+                                – Plus court chemin<br>
+                                – Outils descriptifs pour l'ordonnancement<br>
+                                – Étude de problèmes usuels (affectation, flots, colorations, transitivité…)<br>
+                                – Les différents savoirs de référence pourront être approfondis<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content_ressource">
+                        <div class="column">
+                            <ul>
+                                <li class="title_list"><strong><span>R2.10 :</span> Introduction à la gestion des systèmes d’information </strong></li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l’utilisateur</li>
+                                <li><strong>AC 2</strong> Mettre en place les outils de gestion de projet</li>
+                                <li><strong>AC 3</strong> Identifier les acteurs et les différentes phases d’un cycle de développement</li>
+                            </ul>
+                            <p>
+                                L'<strong>objectif</strong> de cette ressource est de découvrir la gestion comptable et financière ainsi que son intégration dans la
+                                gestion de projet des organisations. Les informations comptables et financières générées par les organisations
+                                représentent un enjeu majeur de leur stratégie. La visualisation des données comptables et financières d'une
+                                organisation permet une gestion optimale au quotidien de leur activité. La découverte des bases en gestion de projet,
+                                notamment des besoins clients et utilisateurs, la mise en place d'outils de gestion, ainsi que l'identification des acteurs
+                                et des phases du cycle de développement assurent à l'organisation une gestion efficiente et efficace des projets
+                                informatiques. L'articulation de ces deux champs de la gestion permet d'appréhender l'importance de l'estimation des
+                                coûts dans la réalisation d'un projet informatique. <br>
+                            <p>
+                                <strong>Savoirs de référence étudiés</strong> <br>
+                                – Fondements du système d'information comptable, financier et décisionnel (sources d'informations, comptabilité
+                                générale, comptabilité de gestion, diagnostic financier)<br>
+                                – Découverte de la gestion de projet informatique (acteurs et parties prenantes, management de l'équipe projet,
+                                expression des besoins, phases du cycle de développement, planification et suivi de projet, estimation des charges
+                                et coûts)<br>
+                                – Les différents savoirs de référence pourront être approfondis<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content_ressource">
+                        <div class="column">
+                            <ul>
+                                <li class="title_list"><strong><span>R2.12 :</span> Anglais </strong></li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur</li>
+                            </ul>
+                            <p>
+                                L'<strong>objectif</strong> de cette ressource est de se familiariser avec le monde de l'entreprise et les métiers de l'informatique dans
+                                un contexte international. <br>
+                            <p>
+                                <strong>Savoirs de référence étudiés</strong> <br>
+                                – Bases de la communication à l'écrit et à l'oral dans un contexte professionnel (par ex. : email, réunion, téléphone…)<br>
+                                – Commentaire des visuels (par ex. : tableaux, graphiques, diaporamas…)<br>
+                                – Exploration du monde de l'entreprise et les métiers de l'informatique<br>
                                 – Les différents savoirs de référence pourront être approfondis <br>
                             </p>
                         </div>
@@ -181,23 +332,22 @@
                     <div class="row content_ressource">
                         <div class="column">
                             <ul>
-                                <li class="title_list"><strong><span>R1.12 :</span> Projet professionnel et personnel</strong></li>
-                                <li><strong>AC 1</strong> Implémenter des conceptions simples</li>
-                                <li><strong>AC 2</strong> Élaborer des conceptions simples</li>
-                                <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
-                                <li><strong>AC 4</strong> Développer des interfaces utilisateurs</li>
+                                <li class="title_list"><strong><span>R2.13 :</span> Communication technique</strong></li>
+                                <li><strong>AC 1</strong> Appréhender les besoins du client et de l'utilisateur</li>
                             </ul>
                             <p>
-                                L'<strong>objectif</strong> de cette ressource est d'identifier le savoir-être et le savoir-faire.
-                                Cette ressource permet de se familiariser avec les éléments constitutifs du B.U.T. informatique (AC), de mieux cerner 
-                                sa connaissance de soi et d'apprendre à définir ses compétences au travers de ses expériences. <br>
+                                L'<strong>objectif</strong> de cette ressource est d'approfondir les techniques et outils de la communication en milieu professionnel.
+                                Cette ressource souligne l'importance de la communication dans le cadre du développement d'une application
+                                informatique en insistant sur l'ergonomie et les interfaces. Elle montre la nécessité de créer des supports de
+                                communication adaptés au contexte professionnel, ainsi que le rôle essentiel de l'argumentation pour défendre le
+                                produit ou l'application développée et convaincre le client ou l'utilisateur. <br>
                             <p>
                                 <strong>Savoirs de référence étudiés</strong> <br>
-                                – Appropriation de la démarche PPP : connaissance de soi (intérêt, curiosité, aspirations, motivations),
-                                accompagnement dans la définition d'une stratégie personnelle permettant la réalisation du projet professionnel <br>
-                                – Appropriation de la formation <br>
-                                – Découverte des métiers et connaissance du territoire <br>
-                                – Projection dans un environnement professionnel <br>
+                                – Conception de documents de communication<br>
+                                – Argumentation<br>
+                                – Communication visuelle<br>
+                                – Vulgarisation d'éléments techniques<br>
+                                – Les différents savoirs de référence pourront être approfondis <br>
                             </p>
                         </div>
                     </div>
@@ -207,35 +357,37 @@
     </div>
 
     <footer>
-        <div class="plan_site">
-            <ul>
-                <li class="first"><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation BUT</a></li>
-                <li>
-                    <p>Compétences</p>
-                    <ul>
-                        <li><a href="competence1.html">Compétence 1</a></li>
-                        <li><a href="competence2.html">Compétence 2</a></li>
-                        <li><a href="competence3.html">Compétence 3</a></li>
-                        <li><a href="competence4.html">Compétence 4</a></li>
-                        <li class="active"><a href="competence5.html">Compétence 5</a></li>
-                        <li><a href="competence6.html">Compétence 6</a></li>
-                    </ul>
-                </li>
-                <li class="last"><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="row">
+            <div class="plan_site">
+                <ul>
+                    <li class="first"><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation BUT</a></li>
+                    <li>
+                        <p>Compétences</p>
+                        <ul>
+                            <li><a href="competence1.html">Compétence 1</a></li>
+                            <li><a href="competence2.html">Compétence 2</a></li>
+                            <li><a href="competence3.html">Compétence 3</a></li>
+                            <li><a href="competence4.html">Compétence 4</a></li>
+                            <li class="active"><a href="competence5.html">Compétence 5</a></li>
+                            <li><a href="competence6.html">Compétence 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="last"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="entreprise">
+                <h3>Equipe A2</h3>
+                <ul>
+                    <li>Raphael Brachais</li>
+                    <li>Titouan Helbert</li>
+                    <li>Natalia Ros</li>
+                    <li>Shun Von Lunen</li>
+                </ul>
+            </div>
         </div>
         <div class="cnil_link">
-            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">CNIL - RGPD</a>
-        </div>
-        <div class="entreprise">
-            <h3>Equipe A2</h3>
-            <ul>
-                <li>Raphael Brachais</li>
-                <li>Titouan Helbert</li>
-                <li>Natalia Ros</li>
-                <li>Shun Von Lunen</li>
-            </ul>
+            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank" rel="noopener">CNIL - RGPD</a>
         </div>
     </footer>
 </body>

@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site du BUT | Compétence 1</title>
+    <meta name="description" content="Site internet du BUT Informatique expliquant les compétences travaillées en première année" />
+    <link rel="shortcut icon" href="assets/images/logo-iut-info.ico" type="image/x-icon">
+    <link rel="canonical" href="https://unkn0wndfbx.github.io/SiteBUT/" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7a0b90407e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- menu responsive -->
+    <label for="menuCheckbox">
+        <i class="fa-solid fa-bars menu_hamburger"></i>
+    </label>
+    <input type="checkbox" id="menuCheckbox">
+    
     <header>
         <div class="header_top">
             <div class="left">
                 <img src="assets/images/logo-UT3.jpg" alt="Logo Université Paul Sabatier">
-                <img src="assets/images/logo_iut_toulouse.jpg" alt="Logo IUT Toulouse">
+                <img src="assets/images/logo-iut-toulouse.jpg" alt="Logo IUT Toulouse">
             </div>
-            <img src="assets/images/logo_but_info.jpg" alt="Logo BUT Informatique">
+            <img src="assets/images/logo-but-info.jpg" alt="Logo BUT Informatique">
         </div>
         <ul class="nav_links">
             <li class="hover"><a href="index.html">Accueil<i class='fa-solid fa-home'></i></a></li>
@@ -37,12 +46,12 @@
     </header>
 
     <div class="body_content">
-        <div class="row_accueil">
+        <div class="row_accueil competences">
             <div class="column">
                 <h1>Apprentissage critique du niveau 1</h1>
                 <div class="row">
-                    <img src="assets/images/image_comp1.png" alt="Image Compétence" class="image_comp">
-                    <ul>
+                    <img src="assets/images/image-comp1.png" alt="Image Compétence" class="image_comp">
+                    <ul class="niv1">
                         <li class="title_list"><strong>Développer des applications informatiques simples</strong></li>
                         <li><strong>AC 1</strong> Implémenter des conceptions simples</li>
                         <li><strong>AC 2</strong> Élaborer des conceptions simples</li>
@@ -92,17 +101,46 @@
 
         <hr>
 
-        <div class="row_accueil competences">
-            <div class="column">
-                <h1>SAE liée à la compétence</h1>
-                <p> Cette SAÉ permet une première mise en pratique du développement autour d'un besoin client .<br>
-                    En partant d'un besoin exprimé par un client, l'objectif est de réaliser une application qui réponde à ce besoin.
-                    <br> Livrables attendus dans le monde professionnel
-                </p>
-                <ul>
-                    <li>Code de l'application</li>
-                    <li>Traces d'exécution des jeux d'essais</li>
-                </ul>
+        <div class="row_accueil competences comp1">
+            <div class="row content_ressource">
+                <div class="column">
+                    <h1>SAÉ liées à la compétence</h1>
+                    <div class="column">
+                        <h2>Semestre 1</h2>
+                        <ul>
+                            <li class="title_list"><strong><span>S1.01 :</span> Implémentation d’un besoin client</strong></li>
+                            <li><strong>AC 1</strong> Implémenter des conceptions simples</li>
+                            <li><strong>AC 2</strong> Élaborer des conceptions simples</li>
+                            <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                        </ul>
+                        <p> Cette SAÉ permet une première mise en pratique du développement autour d'un besoin client.<br>
+                            <strong> Livrables attendus dans le monde professionnel</strong>
+                        </p>
+                        <ul>
+                            <li>Code de l'application</li>
+                            <li>Traces d'exécution des jeux d'essais</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h2>Semestre 2</h2>
+                        <ul>
+                            <li class="title_list"><strong><span>S2.01 :</span> Développement d’une application</strong></li>
+                            <li><strong>AC 1</strong> Implémenter des conceptions simples</li>
+                            <li><strong>AC 2</strong> Élaborer des conceptions simples</li>
+                            <li><strong>AC 3</strong> Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                            <li><strong>AC 4</strong> Développer des interfaces utilisateurs</li>
+                        </ul>
+                        <p> Cette SAÉ permet la concrétisation du développement autour d'une application avec une
+                            interface graphique répondant à un contexte précis.<br>
+                            <strong> Livrables attendus dans le monde professionnel</strong>
+                        </p>
+                        <ul>
+                            <li>Diagrammes d'analyse et de conception</li>
+                            <li>Code de l'application</li>
+                            <li>Jeu d'essais prouvant le respect des spécifications</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -271,35 +309,37 @@
     </div>
 
     <footer>
-        <div class="plan_site">
-            <ul>
-                <li class="first"><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation BUT</a></li>
-                <li>
-                    <p>Compétences</p>
-                    <ul>
-                        <li class="active"><a href="competence1.html">Compétence 1</a></li>
-                        <li><a href="competence2.html">Compétence 2</a></li>
-                        <li><a href="competence3.html">Compétence 3</a></li>
-                        <li><a href="competence4.html">Compétence 4</a></li>
-                        <li><a href="competence5.html">Compétence 5</a></li>
-                        <li><a href="competence6.html">Compétence 6</a></li>
-                    </ul>
-                </li>
-                <li class="last"><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="row">
+            <div class="plan_site">
+                <ul>
+                    <li class="first"><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation BUT</a></li>
+                    <li>
+                        <p>Compétences</p>
+                        <ul>
+                            <li class="active"><a href="competence1.html">Compétence 1</a></li>
+                            <li><a href="competence2.html">Compétence 2</a></li>
+                            <li><a href="competence3.html">Compétence 3</a></li>
+                            <li><a href="competence4.html">Compétence 4</a></li>
+                            <li><a href="competence5.html">Compétence 5</a></li>
+                            <li><a href="competence6.html">Compétence 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="last active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="entreprise">
+                <h3>Equipe A2</h3>
+                <ul>
+                    <li>Raphael Brachais</li>
+                    <li>Titouan Helbert</li>
+                    <li>Natalia Ros</li>
+                    <li>Shun Von Lunen</li>
+                </ul>
+            </div>
         </div>
         <div class="cnil_link">
-            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">CNIL - RGPD</a>
-        </div>
-        <div class="entreprise">
-            <h3>Equipe A2</h3>
-            <ul>
-                <li>Raphael Brachais</li>
-                <li>Titouan Helbert</li>
-                <li>Natalia Ros</li>
-                <li>Shun Von Lunen</li>
-            </ul>
+            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank" rel="noopener">CNIL - RGPD</a>
         </div>
     </footer>
 </body>
