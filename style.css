@@ -1329,4 +1329,15 @@ footer li.active a {
     .row_accueil.presentation_comp img {
         min-width: 160px;
     }
+    .competences.comp1 table,
+    .competences.comp2 table,
+    .competences.comp3 table,
+    .competences.comp4 table,
+    .competences.comp5 table,
+    .competences.comp6 table {
+        min-width: 0;
+        width: 100%;
+        font-size: clamp(.85em, 2vw, 1em);
+        margin-bottom: 10px;
+    }
 }
