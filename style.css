@@ -118,7 +118,7 @@ header .header_top img {
     text-align: center;
     margin: 0 20px;
     position: relative;
-    padding: 0px 10px;
+    padding: 1px 10px;
     cursor: pointer;
     padding-bottom: 10px;
     white-space: nowrap;
@@ -163,7 +163,7 @@ header .header_top img {
 .sous-menu {
     display: none;
     position: absolute;
-    bottom: -278px;
+    bottom: -284px;
     background-color: var(--color-white);
     border: 2px solid var(--color-grey);
     z-index: 99999;
@@ -201,21 +201,6 @@ header .header_top img {
 
 #menuCheckbox {
     display: none;
-}
-
-/* checkbox theme sombre */
-input.chkTheme:checked + label.chkTheme {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999999999;
-    display: flex;
-}
-
-input.chkTheme:checked + label.chkTheme::before {
-    content: 'Désactiver le mode sombre';
 }
 
 /* footer */
@@ -739,6 +724,7 @@ footer li.active a {
 .row_accueil.presentation_comp .row.competences td {
     border: 1px solid var(--color-black);
     width: auto;
+    min-width: 80px;
 }
 
 .row_accueil.presentation_comp .row.competences td.title_comps {
@@ -746,15 +732,20 @@ footer li.active a {
     font-weight: 900;
 }
 
+.row_accueil.presentation_comp.ressource {
+    padding-block: 15px;
+}
+
 .row_accueil.presentation_comp img {
     width: 20vw;
     min-width: 200px;
+    margin-inline: 20px;
+    border-radius: 10px;
 }
 
 .row_accueil.presentation_comp .grille_ressources {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-gap: 25px;
 }
 
@@ -1118,6 +1109,40 @@ footer li.active a {
         height: 40%;
         margin-top: 5px;
     }
+    .row_accueil.presentation_comp .row.competences {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row_accueil.presentation_comp .row.competences p.regles {
+        text-align: start;
+        margin-block: 0 20px;
+        width: 100%;
+        font-size: clamp(.8em, 2vw, .9em);
+    }
+    .row_accueil.presentation_comp .row.competences table {
+        width: 90%;
+        min-width: none;
+        margin-bottom: 10px;
+    }
+    .row_accueil.presentation_comp .row.competences td {
+        min-width: 50px;
+        font-size: clamp(.8em, 2vw, .9em);
+        padding-block: 10px;
+    }
+    .row_accueil.presentation_comp.ressource {
+        padding-block: 10px;
+    }
+    .row_accueil.presentation_comp img {
+        min-width: 100px;
+        margin-inline: 15px;
+    }
+    .row_accueil.presentation_comp .grille_ressources {
+        grid-gap: 20px;
+    }
+    .row_accueil.presentation_comp .grille_ressources .item_grid {
+        padding: 15px;
+        font-size: clamp(.75em, 2vw, .85em);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1206,6 +1231,23 @@ footer li.active a {
     footer .entreprise li,
     footer .plan_site ul li p {
         font-size: clamp(.85em, 2vw, 1em);
+    }
+    .row_accueil.presentation_comp .row.competences td.title_comps {
+        min-width: 60px;
+        padding-inline: 5px;
+    }
+    .row_accueil.presentation_comp .grille_ressources {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .row_accueil.presentation_comp.ressource {
+        flex-direction: column;
+    }
+    .row_accueil.presentation_comp.ressource.reverse_res {
+        flex-direction: column-reverse;
+    }
+    .row_accueil.presentation_comp img {
+        min-width: 200px;
+        margin-block: 10px;
     }
 }
 
