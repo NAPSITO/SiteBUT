@@ -1316,4 +1316,17 @@ footer li.active a {
         width: 70%;
         margin-top: 10px;
     }
+    .row_accueil.presentation_comp .row.competences table {
+        width: 100%;
+    }
+    .row_accueil.presentation_comp .row.competences td {
+        min-width: 0;
+        font-size: clamp(.7em, 2vw, .8em);
+    }
+    .row_accueil.presentation_comp .row.competences td.title_comps {
+        min-width: 0;
+    }
+    .row_accueil.presentation_comp img {
+        min-width: 160px;
+    }
 }
