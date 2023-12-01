@@ -509,7 +509,7 @@ footer li.active a {
 }
 
 /* competence page */
-.row_accueil.competences .column h2 {
+.row_accueil.competences .column p.title_comp {
     font-size: 1.1em;
     color: var(--color-black2);
     font-weight: 500;
@@ -663,7 +663,7 @@ footer li.active a {
     border-bottom: 2px var(--color-black2) solid;
 }
 
-.content_ressource .column .column h2 {
+.content_ressource .column .column p.title_comp {
     margin-bottom: 10px;
 }
 
@@ -1024,7 +1024,7 @@ footer li.active a {
     .row.reverse img {
         margin-inline: 15px;
     }
-    .row_accueil.competences .column h2 {
+    .row_accueil.competences .column p.title_comp {
         font-size: clamp(.9em, 2vw, 1.1em);
         line-height: 1;
     }
